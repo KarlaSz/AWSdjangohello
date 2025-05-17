@@ -6,4 +6,4 @@ class SimpleTests(SimpleTestCase):
         self.assertEqual(response.status_code, second=200)
     def test_home_page_contains_correct_html(self):
         response = self.client.get('/')
-        self.assertContains(response, 'Hello, World!')
+        self.assertContains(response, 'Hello, django app!')
