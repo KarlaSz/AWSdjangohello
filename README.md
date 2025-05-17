@@ -87,18 +87,7 @@ Install dependencies on the server:
     source venv/bin/activate
     pip install -r requirements.txt
 
-### Step 4: Configure PostgreSQL (AWS RDS)
-Create an RDS instance via AWS Console or CLI.
-
-Update your DATABASE_URL in .env with RDS endpoint.
-
-### Step 5: Set Up AWS S3 for Media Storage
-    ```bash
-    aws s3 mb s3://your-app-bucket-name
-
-Update Django settings to use django-storages for managing media files.
-
-### Step 6: Configure Gunicorn + Nginx
+### Step 4: Configure Gunicorn + Nginx
 Set up Gunicorn as an application server:
 
     ```bash
