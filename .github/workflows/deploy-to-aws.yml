@@ -28,3 +28,4 @@ jobs:
           pip install awsebcli
           eb init Django-python-hello-world -p python-3.13 --region ${{ vars.AWS_REGION }}
           eb deploy Django-python-hello-world-env
+          
