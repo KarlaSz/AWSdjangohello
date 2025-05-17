@@ -1,6 +1,9 @@
 from django.http import HttpResponse
+import os
 from django.shortcuts import render
+
+ENV = os.environ.get('ENV', 'dev')
 
 
 def hello_world(request):
-    return HttpResponse("<h1>Hello, World!</h1><p>Autor: Bartosz Bryniarski</p>")
+    return HttpResponse(f"<h1>Hello, World!</h1><p>Środowisko: {ENV}</p><p>Autor: Karolina Szymaszkiewicz</p>")
