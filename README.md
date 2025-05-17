@@ -46,7 +46,7 @@ DEBUG=True
     ```bash
     python manage.py migrate
 
-###Step 5: Run Local Server
+### Step 5: Run Local Server
     ```bash
     python manage.py runserver
     Your application will now be accessible at http://127.0.0.1:8000/.
