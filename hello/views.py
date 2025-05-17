@@ -6,4 +6,4 @@ ENV = os.environ.get('ENV', 'dev')
 
 
 def hello_world(request):
-    return HttpResponse(f"<h1>Hello, World!</h1><p>Środowisko: {ENV}</p><p>Autor: Karolina Szymaszkiewicz</p>")
+    return HttpResponse(f"<h1>Hello, World!</h1><p>Środowisko: {ENV}</p><p>Autor: <b>Karolina Szymaszkiewicz</b></p>")
