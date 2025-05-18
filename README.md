@@ -91,3 +91,14 @@ Set up Gunicorn as an application server:
 
     ```bash
     gunicorn --bind 0.0.0.0:8000 your_pr
+
+
+### GitHub Actions Pipeline
+GitHub Actions is a powerful tool for automating Continuous Integration / Continuous Deployment (CI/CD) processes. This project includes a GitHub Actions pipeline that automates the testing and deployment of the Django application to AWS EC2. Every time there is a push to the `main` branch, the pipeline runs the tests and deploys the updated code to production.
+
+The pipeline is defined in the `.github/workflows/deploy.yml` file, which includes the following steps:
+1. **Check out the code** from the repository.
+2. **Set up the Python environment** with the required version.
+3. **Install dependencies** from `requirements.txt`.
+4. **Run tests** to ensure the application works correctly.
+5. **Deploy to AWS EC2**, pulling the latest changes and restarting the application.
