@@ -80,10 +80,10 @@ if ENV == 'prod':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get('RDS_DB_NAME', 'karodb'),
+            'NAME': os.environ.get('RDS_DB_NAME', 'postgres'),
             'USER': os.environ.get('RDS_USERNAME', 'postgres'),
-            'PASSWORD': os.environ.get('RDS_PASSWORD', 'django-project'),
-            'HOST': os.environ.get('RDS_HOSTNAME', 'database-1.c58weaeowwj3.eu-central-1.rds.amazonaws.com'),
+            'PASSWORD': os.environ.get('RDS_PASSWORD', ''),
+            'HOST': os.environ.get('RDS_HOSTNAME', 'localhost'),
             'PORT': os.environ.get('RDS_PORT', '5432'),
         }
     }
