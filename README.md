@@ -5,6 +5,7 @@ This project is a **Django-based web application** deployed on **Amazon Web Serv
 
 ## 🌍 Live Deployment
 The application is deployed on AWS EC2, with:
+- **PostgreSQL (db)** for production data storage
 - **SQLite3 (db)** for data storage
 - **AWS S3** for media and static files
 - **Elastic Load Balancer** for efficient traffic distribution
@@ -14,6 +15,7 @@ The application is deployed on AWS EC2, with:
 ### Prerequisites:
 - Python 3.9+
 - Django 4.0+
+- PostgreSQL
 - SQLite3
 - AWS CLI (configured with your AWS credentials)
 - Virtual environment (recommended)
@@ -21,8 +23,8 @@ The application is deployed on AWS EC2, with:
 ### Installation Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/django-app.git
-   cd django-app
+   git clone https://github.com/KarlaSz/AWSdjangohello.git
+   cd django-hello
 
 
 
@@ -30,9 +32,6 @@ The application is deployed on AWS EC2, with:
     ```bash
     pip install -r requirements.txt
 
-### Step 2: Install Dependencies
-    ```bash
-    pip install -r requirements.txt
 
 ### Step 3: Configure Environment Variables
 Create a .env file in the root directory with your AWS and database credentials:
@@ -80,8 +79,8 @@ Install dependencies on the server:
     Clone and set up the project:
 
     ```bash
-    git clone https://github.com/your-repo/django-hello.git
-    cd django-heloo
+    git clone https://github.com/KarlaSz/AWSdjangohello.git
+    cd django-hello
 
     python3 -m venv venv
     source venv/bin/activate
