@@ -72,7 +72,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'djangohello.wsgi.application'
 
 
-# Databased
+# Databasedd
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 
